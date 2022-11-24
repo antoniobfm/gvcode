@@ -22,15 +22,26 @@
     }
 
     #menu {
-      display: flex;
-      justify-content: space-between;
     }
 
-    #menu img {
+    #menu .wrapper {
+      height: 82px;
+
+      margin: auto;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      max-width: 1200px;
+    }
+
+    #menu .wrapper img {
+      height: 26px;
       mix-blend-mode: luminosity;
     }
 
-    #menu ul {
+    #menu .wrapper ul {
       width: 50%;
 
       display: flex;
@@ -39,11 +50,11 @@
       column-gap: 32px;
     }
 
-    #menu ul li {
+    #menu .wrapper ul li {
 
     }
 
-    #menu ul li a {
+    #menu .wrapper ul li a {
       color: white;
       text-decoration: none;
 
@@ -52,22 +63,25 @@
       font-weight: 700;
       font-size: 14px;
       line-height: 17px;
+      white-space: nowrap;
     }
     </style>
   </head>
   <body>
     <div id="menu">
-      <img src="/public/images/logo.png" />
-      <nav>
-        <ul>
-          <li><a href="index.html">INICIO</a></li>
-          <li><a href="about.html">MISSÃO</a></li>
-          <li><a href="contact.html">CASES</a></li>
-          <li><a href="contact.html">SOBRE NÓS</a></li>
-          <li><a href="contact.html">TIME</a></li>
-          <li><a href="contact.html">CONTATO</a></li>
-        </ul>
-      </nav>
+      <div class="wrapper">
+        <img src="C:\Coding\gvcode\public\images\logo.png" />
+        <nav>
+          <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="about.html">MISSÃO</a></li>
+            <li><a href="contact.html">CASES</a></li>
+            <li><a href="contact.html">SOBRE NÓS</a></li>
+            <li><a href="contact.html">TIME</a></li>
+            <li><a href="contact.html">CONTATO</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
     <section id="hero">
       <h1>Bem vindo à <span>GVCode</span></h1>
