@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>My First Web Page</title>
     <style>
     * {
@@ -17,6 +20,39 @@
     body {
       background: #0E0E10;
     }
+
+    #menu {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #menu img {
+      mix-blend-mode: luminosity;
+    }
+
+    #menu ul {
+      width: 50%;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 32px;
+    }
+
+    #menu ul li {
+
+    }
+
+    #menu ul li a {
+      color: white;
+      text-decoration: none;
+
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+    }
     </style>
   </head>
   <body>
@@ -24,9 +60,12 @@
       <img src="/public/images/logo.png" />
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="about.html">MISSÃO</a></li>
+          <li><a href="contact.html">CASES</a></li>
+          <li><a href="contact.html">SOBRE NÓS</a></li>
+          <li><a href="contact.html">TIME</a></li>
+          <li><a href="contact.html">CONTATO</a></li>
         </ul>
       </nav>
     </div>
