@@ -176,6 +176,151 @@
       width: 100%;
       height: 100%;
     }
+
+    #team {
+      padding-top: 156px;
+    }
+
+    #team h2 {
+      padding-bottom: 11px;
+
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 31.25px;
+      line-height: 38px;
+      /* identical to box height */
+      text-align: center;
+
+      letter-spacing: 0.02em;
+
+      /* t */
+
+      background: linear-gradient(180deg, rgba(21, 21, 24, 0) 0%, rgba(22, 22, 25, 0.39) 100%), #FFFFFF;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+
+    #team h3 {
+      padding-bottom: 48px;
+
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+      /* or 160% */
+
+      text-align: center;
+
+      /* Colors / White */
+
+      color: #FFFFFF;
+
+      mix-blend-mode: normal;
+      opacity: 0.7;
+    }
+
+    #team .team-container {
+      max-width: 1200px;
+      margin: auto;
+
+      background: linear-gradient(94.71deg, rgba(255, 255, 255, 0.175) -0.22%, rgba(255, 255, 255, 0.07) 100%);
+      border-radius: 16px;
+
+      display: flex;
+      justify-content: space-between;
+
+      padding: 1px;
+    }
+
+    #team .team-container .member {
+      flex: 1;
+      backdrop-filter: blur(27.5px);
+
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+
+      overflow: hidden;
+    }
+
+    #team .team-container .member:first-child {
+      flex: 1;
+      backdrop-filter: blur(27.5px);
+      border-top-left-radius: 16px;
+      border-bottom-left-radius: 16px;
+
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    #team .team-container .member:last-child {
+      flex: 1;
+      backdrop-filter: blur(27.5px);
+      border-top-right-radius: 16px;
+      border-bottom-right-radius: 16px;
+
+      border: none;
+    }
+
+    #team .team-container .member img {
+
+    }
+
+    #team .team-container .member .member-details {
+      padding-top: 24px;
+      padding-left: 16px;
+      padding-bottom: 16px;
+    }
+
+    #team .team-container .member .member-details h4 {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 32px;
+      /* identical to box height, or 160% */
+
+
+      /* Colors / White */
+
+      color: #FFFFFF;
+    }
+
+    #team .team-container .member .member-details p {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      /* identical to box height, or 162% */
+
+
+      /* Colors / White */
+
+      color: #FFFFFF;
+
+      opacity: 0.7;
+    }
+
+    #team .team-container .member .member-socials {
+      width: 40px;
+      height: 40px;
+
+      margin-bottom: 32px;
+      margin-left: 16px;
+
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 6px;
+
+      border: 1px solid;
+
+      border-image: linear-gradient(133.26deg, rgba(255, 255, 255, 0.05) 0.61%, rgba(255, 255, 255, 0) 103.83%) 1;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     </style>
   </head>
   <body>
@@ -333,14 +478,14 @@
         Lorem ipsum dolor sit amet consectetur. Iaculis aliquet etiam non
         gravida massa risus nunc.
       </h3>
-      <div className="team-container">
-        <div className="member">
-          <img src="" />
-          <div className="member-details">
+      <div class="team-container">
+        <div class="member">
+          <img src="public\images\victor.png" />
+          <div class="member-details">
             <h4>Victor Laube</h4>
             <p>Presidente</p>
           </div>
-          <div className="member-socials">
+          <div class="member-socials">
             <a href="#">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3.58151 16H0.264292V5.31762H3.58151V16ZM1.92111 3.86044C0.860376 3.86044 0 2.98185 0 1.92111C7.59231e-09 1.4116 0.202403 0.92296 0.562681 0.562681C0.92296 0.202403 1.4116 0 1.92111 0C2.43063 0 2.91927 0.202403 3.27955 0.562681C3.63983 0.92296 3.84223 1.4116 3.84223 1.92111C3.84223 2.98185 2.98149 3.86044 1.92111 3.86044ZM15.9968 16H12.6867V10.7999C12.6867 9.56057 12.6617 7.97125 10.962 7.97125C9.23735 7.97125 8.97306 9.31771 8.97306 10.7106V16H5.65941V5.31762H8.84091V6.77479H8.88734C9.33021 5.93549 10.412 5.04976 12.026 5.04976C15.3832 5.04976 16.0004 7.26052 16.0004 10.132V16H15.9968Z" fill="white"/>
@@ -348,13 +493,13 @@
             </a>
           </div>
         </div>
-        <div className="member">
-          <img src="" />
-          <div className="member-details">
+        <div class="member">
+          <img src="public\images\ricardo.png" />
+          <div class="member-details">
             <h4>Ricardo Semião</h4>
             <p>Vice presidente</p>
           </div>
-          <div className="member-socials">
+          <div class="member-socials">
             <a href="#">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3.58151 16H0.264292V5.31762H3.58151V16ZM1.92111 3.86044C0.860376 3.86044 0 2.98185 0 1.92111C7.59231e-09 1.4116 0.202403 0.92296 0.562681 0.562681C0.92296 0.202403 1.4116 0 1.92111 0C2.43063 0 2.91927 0.202403 3.27955 0.562681C3.63983 0.92296 3.84223 1.4116 3.84223 1.92111C3.84223 2.98185 2.98149 3.86044 1.92111 3.86044ZM15.9968 16H12.6867V10.7999C12.6867 9.56057 12.6617 7.97125 10.962 7.97125C9.23735 7.97125 8.97306 9.31771 8.97306 10.7106V16H5.65941V5.31762H8.84091V6.77479H8.88734C9.33021 5.93549 10.412 5.04976 12.026 5.04976C15.3832 5.04976 16.0004 7.26052 16.0004 10.132V16H15.9968Z" fill="white"/>
@@ -362,13 +507,13 @@
             </a>
           </div>
         </div>
-        <div className="member">
-          <img src="" />
-          <div className="member-details">
+        <div class="member">
+          <img src="public\images\davi.png" />
+          <div class="member-details">
             <h4>Davi Siqueira</h4>
             <p>Diretor de vendas</p>
           </div>
-          <div className="member-socials">
+          <div class="member-socials">
             <a href="#">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3.58151 16H0.264292V5.31762H3.58151V16ZM1.92111 3.86044C0.860376 3.86044 0 2.98185 0 1.92111C7.59231e-09 1.4116 0.202403 0.92296 0.562681 0.562681C0.92296 0.202403 1.4116 0 1.92111 0C2.43063 0 2.91927 0.202403 3.27955 0.562681C3.63983 0.92296 3.84223 1.4116 3.84223 1.92111C3.84223 2.98185 2.98149 3.86044 1.92111 3.86044ZM15.9968 16H12.6867V10.7999C12.6867 9.56057 12.6617 7.97125 10.962 7.97125C9.23735 7.97125 8.97306 9.31771 8.97306 10.7106V16H5.65941V5.31762H8.84091V6.77479H8.88734C9.33021 5.93549 10.412 5.04976 12.026 5.04976C15.3832 5.04976 16.0004 7.26052 16.0004 10.132V16H15.9968Z" fill="white"/>
@@ -376,13 +521,13 @@
             </a>
           </div>
         </div>
-        <div className="member">
-          <img src="" />
-          <div className="member-details">
+        <div class="member">
+          <img src="public\images\bruno.png" />
+          <div class="member-details">
             <h4>Bruno Ting</h4>
             <p>Diretor do Grupo de Estudos</p>
           </div>
-          <div className="member-socials">
+          <div class="member-socials">
             <a href="#">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3.58151 16H0.264292V5.31762H3.58151V16ZM1.92111 3.86044C0.860376 3.86044 0 2.98185 0 1.92111C7.59231e-09 1.4116 0.202403 0.92296 0.562681 0.562681C0.92296 0.202403 1.4116 0 1.92111 0C2.43063 0 2.91927 0.202403 3.27955 0.562681C3.63983 0.92296 3.84223 1.4116 3.84223 1.92111C3.84223 2.98185 2.98149 3.86044 1.92111 3.86044ZM15.9968 16H12.6867V10.7999C12.6867 9.56057 12.6617 7.97125 10.962 7.97125C9.23735 7.97125 8.97306 9.31771 8.97306 10.7106V16H5.65941V5.31762H8.84091V6.77479H8.88734C9.33021 5.93549 10.412 5.04976 12.026 5.04976C15.3832 5.04976 16.0004 7.26052 16.0004 10.132V16H15.9968Z" fill="white"/>
