@@ -240,6 +240,80 @@
       width: 100%;
       height: 100%;
     }
+    
+    #why {
+      padding-top: 365px;
+    }
+
+    #why .wrapper {
+      max-width: 1200px;
+      margin: auto;
+
+      display: flex;
+      column-gap: 32px;
+    }
+
+    #why .wrapper .why-image {
+      position: relative;
+    }
+
+    #why .wrapper .why-image img {
+      border-radius: 6px;
+    }
+
+    #why .wrapper .why-image:after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      margin-top: -101px;
+      margin-left: -30%;
+      width: 100%;
+      height: 100%;
+      
+      border-radius: 6px;
+      background: linear-gradient(114.94deg, #1E1E20 3.4%, #2E2E30 100%);
+    }
+
+    #why .wrapper div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      row-gap: 8px;
+    }
+    
+    #why .wrapper div h2 {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 31.25px;
+      line-height: 38px;
+      /* identical to box height */
+
+      letter-spacing: 0.02em;
+
+      background: linear-gradient(180deg, #999999 0%, #EEEEEE 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+
+    #why .wrapper div p {
+      max-width: 275px;
+
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 152.4%;
+      /* or 24px */
+
+
+      color: #BDBDBD;
+    }
 
     #partners {
       padding-top: 32px;
@@ -514,15 +588,21 @@
       </div>
     </section>
     <section id="why">
-      <img src="images/why.png" />
-      <h2>Porque a GVCode</h2>
-      <p>
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum”
-      </p>
+      <div class="wrapper">
+        <div class="why-image">
+          <img src="C:\Coding\gvcode\public\images\why.png" />
+        </div>
+        <div>
+          <h2>Porque a GVCode</h2>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum”
+          </p>
+        </div>
+      </div>
     </section>
     <section id="history">
       <img src="images/history.png" />
