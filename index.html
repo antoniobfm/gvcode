@@ -452,6 +452,79 @@
 
       color: #BDBDBD;
     }
+
+    #history {  
+      padding-top: 88px;
+    }
+    
+    #history .wrapper {
+      max-width: 1200px;
+      margin: auto;
+
+      display: flex;
+      align-items: flex-start;
+      flex-direction: row-reverse;
+      column-gap: 32px;
+    }
+
+    #history .wrapper .history-image {
+      position: relative;
+    }
+
+    #history .wrapper .history-image::after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      background: linear-gradient(114.94deg, #1E1E20 100%, #2E2E30 3.4%);
+      width: 100%;
+      height: 100%;
+      margin-top: 101px;
+      margin-right: -30%;
+      border-radius: 6px;
+    }
+
+    #history .wrapper .history-image img {
+      border-radius: 6px;
+    }
+
+    #history .wrapper div {
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+    }
+
+    #history .wrapper div h2 {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 31.25px;
+      line-height: 38px;
+      /* identical to box height */
+
+      letter-spacing: 0.02em;
+
+      background: linear-gradient(180deg, #999999 0%, #EEEEEE 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+
+    #history .wrapper div p {
+      max-width: 276px;
+
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 152.4%;
+      /* or 24px */
+
+
+      color: #B6B6B7;
+    }
     </style>
   </head>
   <body>
@@ -605,14 +678,20 @@
       </div>
     </section>
     <section id="history">
-      <img src="images/history.png" />
-      <h2>Nossa história</h2>
-      <p>
-        O GVCode foi fundado em 2016 como um grupo de estudos de programação
-        onde os membros poderiam ensinar e ajudar uns aos outros. Em 2021 a
-        organização sofreu uma reestruturação e firmou-se, de fato, como uma
-        entidade.
-      </p>
+      <div class="wrapper">
+        <div class="history-image">
+          <img src="public\images\history.png" />
+        </div>
+        <div>
+          <h2>Nossa história</h2>
+          <p>
+            O GVCode foi fundado em 2016 como um grupo de estudos de programação
+            onde os membros poderiam ensinar e ajudar uns aos outros. Em 2021 a
+            organização sofreu uma reestruturação e firmou-se, de fato, como uma
+            entidade.
+          </p>
+        </div>
+      </div>
     </section>
     <section id="team">
       <h2>Nosso time</h2>
