@@ -792,7 +792,173 @@
       align-items: center;
       justify-content: center;
     }
-    </style>
+
+    #contact {
+      position: relative;
+
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
+
+    #contact::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("public/images/nnnoise.svg");
+      mix-blend-mode: lighten;
+      opacity: 0.05;
+      z-index: -1;
+    }
+
+    #contact > div {
+      max-width: 1200px;
+      margin: auto;
+
+      display: flex;
+
+      column-gap: 20%;
+    }
+
+    #contact .description {
+      flex: 1;
+    }
+
+    #contact .description h2 {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 31.5px;
+      line-height: 38px;
+      letter-spacing: 0.02em;
+
+      /* t */
+
+      background: linear-gradient(180deg, rgba(21, 21, 24, 0) 0%, rgba(22, 22, 25, 0.39) 100%), #FFFFFF;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+
+    #contact .description p {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 32px;
+      /* or 200% */
+
+
+      /* Colors / White */
+
+      color: #FFFFFF;
+
+      mix-blend-mode: normal;
+    }
+
+    #contact .form-wrapper {
+      flex: 1;
+    }
+
+    #contact .form-wrapper form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 8px 0px 16px;
+
+      background: #1F1F22;
+      border-radius: 16px;
+    }
+
+    #contact .form-wrapper form .form-group {
+      width: 100%;
+      
+      display: flex;
+      flex-direction: column;
+
+      row-gap: 8px;
+
+      box-sizing: border-box;
+      padding: 16px 16px;
+    }
+
+    #contact .form-wrapper form .form-group label {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12.8px;
+      line-height: 16px;
+      /* identical to box height */
+
+
+      color: #FFFFFF;
+    }
+
+    #contact .form-wrapper form .form-group input {
+      height: 56px;
+
+      background: rgba(0, 0, 0, 0.15);
+      border-radius: 16px;
+      padding: 0px 16px;
+
+      border: 1px solid rgba(255, 255, 255, 0.05);
+
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      /* identical to box height */
+
+
+      color: #FFFFFF;
+    }
+
+    #contact .form-wrapper form .form-group textarea {
+      height: 56px;
+
+      background: rgba(0, 0, 0, 0.15);
+      border-radius: 16px;
+      padding: 0px 16px;
+
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      /* identical to box height */
+
+      color: #FFFFFF;
+      resize: vertical;
+    }
+
+    #contact .form-wrapper form button {
+      width: calc(100% - 32px);
+      height: 56px;
+      background: linear-gradient(270deg, #F75179 0%, #AA00FA 100%);
+      border-radius: 16px;
+
+      border: none;
+      outline: none;
+
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      /* identical to box height */
+
+
+      color: #FFFFFF;
+
+      margin: 8px auto 16px;
+    }
+  </style>
   </head>
   <body>
     <div id="menu">
@@ -1051,30 +1217,32 @@
       </div>
     </section>
     <section id="contact">
-      <div className="">
-        <h2>Entre em contato</h2>
-        <p>Você pode entrar em contato com o GVCode através do nosso formulário de contato ou enviando um email para: gvcodemaster@gmail.com</p>
-      </div>
-      <div className="form-wrapper">
-        <form>
-          <div className="form-group">
-            <label htmlFor="name">Nome</label>
-            <input type="text" name="name" id="name" />
-          </div>
-          <div className="form-group">
-            <label htmlFor="email">Email</label>
-            <input type="email" name="email" id="email" />
-          </div>
-          <div className="form-group">
-            <label htmlFor="title">Assunto</label>
-            <input type="title" name="title" id="title" />
-          </div>
-          <div className="form-group">
-            <label htmlFor="message">Mensagem</label>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
-          </div>
-          <button type="submit">Enviar mensagem</button>
-        </form>
+      <div>
+        <div class="description">
+          <h2>Entre em contato</h2>
+          <p>Você pode entrar em contato com o GVCode através do nosso formulário de contato ou enviando um email para: gvcodemaster@gmail.com</p>
+        </div>
+        <div class="form-wrapper">
+          <form>
+            <div class="form-group">
+              <label htmlFor="name">Nome</label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <div class="form-group">
+              <label htmlFor="email">Email</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="form-group">
+              <label htmlFor="title">Assunto</label>
+              <input type="title" name="title" id="title" />
+            </div>
+            <div class="form-group">
+              <label htmlFor="message">Mensagem</label>
+              <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit">Enviar mensagem</button>
+          </form>
+        </div>
       </div>
     </section>
   </body>
